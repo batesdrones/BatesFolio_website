@@ -20,7 +20,7 @@ body{
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     z-index: 9;
     background: #1a1a1a;
@@ -84,7 +84,7 @@ body{
     height: 100vh;
     width: 50%;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 /* project-section */
@@ -303,31 +303,31 @@ body{
     border: 10px solid;
 }
 
-.skill-card:nth-child(1) .skill-level{
+.skill-card:nth-child(1){
     background: #ff4f4f28;
     border-color: #ff4f4f;
     color: #ff4f4f;
 }
 
-.skill-card:nth-child(2) .skill-level{
+.skill-card:nth-child(2){
     background: #4fa0ff28;
     border-color: #4fa0ff;
     color: #4fa0ff;
 }
 
-.skill-card:nth-child(3) .skill-level{
+.skill-card:nth-child(3){
     background: #ffed4f28;
     border-color: #ffed4f;
     color: #ffed4f;
 }
 
-.skill-card:nth-child(4) .skill-level{
+.skill-card:nth-child(4){
     background: #52ff4f28;
     border-color: #52ff4f;
     color: #52ff4f;
 }
 
-.skill-card:nth-child(5) .skill-level{
+.skill-card:nth-child(5){
     background: #4fdfff28;
     border-color: #4fdfff;
     color: #4fdfff;
