@@ -26,6 +26,11 @@ body{
     background: #1a1a1a;
 }
 
+.socmed {
+    display: inline-block !important;
+    float: left !important;
+}
+
 .link-group{
     list-style: none;
     display: flex;
