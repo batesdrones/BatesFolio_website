@@ -26,11 +26,6 @@ body{
     background: #1a1a1a;
 }
 
-.socmed {
-    display: inline-block !important;
-    float: left !important;
-}
-
 .link-group{
     list-style: none;
     display: flex;
@@ -78,6 +73,13 @@ body{
 .hero-heading{
     color: #fff;
     font-size: 120px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.hero-paragraph{
+    color: #fff;
+    font-size: 100px;
     text-transform: capitalize;
     font-weight: 300;
 }
@@ -140,7 +142,15 @@ body{
 .project-content{
     position: relative;
     padding: 40px;
-    color: #fff;
+    color: #171616;
+    transition: .5s;
+    opacity: 0;
+}
+
+.project-content-man{
+    position: relative;
+    padding: 40px;
+    color: #0b0b0b;
     transition: .5s;
     opacity: 0;
 }
