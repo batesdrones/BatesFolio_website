@@ -290,6 +290,7 @@ body{
 .about-img-container{
     position: relative;
     grid-row: 1 / span 3;
+    justify-self: end;
 }
 
 .about-info{
