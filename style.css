@@ -219,6 +219,7 @@ body{
   }
 
 .project-info{
+    width: 400;
     margin: 10px 0; /*Adjust value to add space around project info text */
     font-size: 16px;
     line-height: 24px;
@@ -288,13 +289,20 @@ body{
 
 .about-img-container{
     position: relative;
+    grid-row: 1 / span 3;
 }
 
 .about-info{
     color: #fff;
     opacity: 0.6;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 32px;
+    margin-top: 2px;
+    margin: right;
+    margin-bottom: 0px;
+    position: relative;
+    vertical-align: middle;
+    grid-column: 2;
 }
 
 .about-img{
@@ -376,12 +384,14 @@ body{
 
 .timeline{
     display: block;
-    width: 80%;
+    width: 60%;
     margin: 150px auto;
 }
 
 .timeline .heading{
     margin-bottom: 150px;
+    color: white;
+    text-decoration: underline;
 }
 
 .card{
