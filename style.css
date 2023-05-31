@@ -443,7 +443,7 @@ body{
     transform: translateY(-50%);
     width: 7%;
     height: 2px;
-    background: #fff;
+    background: purple;
     z-index: -1;
 }
 
@@ -479,6 +479,8 @@ body{
     font-weight: 300;
     margin-bottom: 20px;
 }
+
+
 
 .contact-section{
     position: absolute;
