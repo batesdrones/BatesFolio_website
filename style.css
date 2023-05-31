@@ -389,7 +389,7 @@ body{
     margin: 150px auto;
 }
 
-.timeline .heading{
+.timeline-heading{
     margin-bottom: 150px;
     color: white;
     text-decoration: underline;
