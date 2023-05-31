@@ -47,10 +47,38 @@ body{
     background: #1a1a1a;
 }
 
-.link-group{
-    list-style: none;
-    display: flex;
-}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    display: block;
+  }
+  
+  .link-group {
+    position: relative;
+  }
+  
+  .link-group li {
+    display: inline-block;
+  }
+  
+  .link-group li.dropdown {
+    position: relative;
+  }
+  
+  .link-group li.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 
 .link a{
     color: #fff;
