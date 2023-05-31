@@ -208,8 +208,8 @@ body{
   
   .project-content-man {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 20%;
     transform: translate(-50%, -50%);
     padding: 40px;
     color: #0b0b0b;
@@ -217,13 +217,25 @@ body{
     opacity: 0;
     z-index: 1;
   }
-  
+
 .project-info{
-    margin: 40px;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
+    margin: 10px 0; /*Adjust value to add space around project info text */
+    font-size: 16px;
+    line-height: 24px;
+    /* text-align: center; */
     color: black
+}
+
+.project-info.smaller-text {
+    font-size: 16px;
+}
+
+.project-btn-grp.higher-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -40px; /* Adjust this value to move the buttons higher */
 }
 
 .project-btn-grp{

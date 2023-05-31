@@ -4,23 +4,24 @@ const sections = document.querySelectorAll('section');
 let activeLink = 0;
 
 links.forEach((link, i) => {
-    link.addEventListener('click', () => {
-        if(activeLink != i){
-            links[activeLink].classList.remove('active');
-            link.classList.add('active');
-            sections[activeLink].classList.remove('active');
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    if (activeLink != i) {
+      links[activeLink].classList.remove('active');
+      link.classList.add('active');
+      sections[activeLink].classList.remove('active');
 
-            setTimeout(() => {
-                activeLink = i;
-                sections[i].classList.add('active');
-            }, 1000);
-        }
-    })
-})
+      setTimeout(() => {
+        activeLink = i;
+        sections[i].classList.add('active');
+      }, 1000);
+    }
+  });
+});
 
 const imageContainer = document.querySelector('.image-container');
 
-imageContainer.addEventListener('mousemove', event => {
+imageContainer.addEventListener('mousemove', (event) => {
   const containerRect = imageContainer.getBoundingClientRect();
   const mouseX = event.clientX - containerRect.left;
   const mouseY = event.clientY - containerRect.top;
