@@ -20,6 +20,13 @@ body{
     text-align: right;
     padding: 100px;
     background-color: #f5f5f5;
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
   }
   
   .name {
@@ -189,6 +196,7 @@ body{
 
 .project-heading{
     font-size: 100px;
+    width: 100%;
     background: grey;
     text-transform: capitalize;
     text-align: center;
@@ -519,6 +527,13 @@ color: #666;
         margin-bottom: 20px;
     }
 
+    .contact {
+        margin-bottom: 20px;
+      }
+
+.email-heading{
+    padding-top:20px;
+}
 
 
 .contact-section{
@@ -528,9 +543,13 @@ color: #666;
     transition: 1s;
     padding: 100px 150px;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
     grid-gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .contact-form input, .contact-form textarea{
@@ -543,7 +562,27 @@ color: #666;
     text-transform: capitalize;
     color: #fff;
     padding: 5px 10px;
+    orientation: right;
 }
+
+.social-media {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
 
 ::placeholder{
     color: #fff;
@@ -567,13 +606,31 @@ color: #666;
     cursor: pointer;
 }
 
-.map{
+.contact-heading{
+    font-size: 100px;
     width: 100%;
+    background: grey;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: 1a1a1a;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+}
+
+
+.map{
+    width: 200%;
     height: 100%;
     padding: 10px;
     border: 2px solid #fff;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    orientation: left;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .map iframe{
