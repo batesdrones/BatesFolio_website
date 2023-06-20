@@ -21,7 +21,7 @@ body{
     padding: 100px;
     background-color: #f5f5f5;
     position: absolute;
-    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    bottom: 100px; /* Adjust the distance from the bottom as needed */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -116,11 +116,16 @@ body{
 /* home section */
 .home-section {
     position: relative;
+    height: 100vh;
+    background-image: url('img/dream.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   
   .image-container {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
   }
   
   .home-img {
@@ -128,9 +133,24 @@ body{
     transition: filter 0.3s, transform 0.5s;
     max-width: 1000px; /* Adjust the maximum width as desired */
     height: auto;
-    transform: translateX(0);
     position: relative;
     z-index: 0;
+  }
+
+  .home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity and color as desired  */
+    z-index: -1;
+  }
+  
+  .home-section:hover .home-img {
+    filter: blur(0);
+    transform: translateX(-50%);
   }
   
   .blur-container {
@@ -169,19 +189,11 @@ body{
     padding: 80px;
     background-color: #f5f5f5;
   }
-  
-  .name {
-    font-size: 18px;
-  }
-  
+    
   .tagline {
     font-size: 24px;
   }
   
-  .batesfolio {
-    font-size: 32px;
-    font-weight: bold;
-  }
 /* project-section */
 
 .project-section{
@@ -194,8 +206,14 @@ body{
     opacity: 0;
 }
 
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('img/LexendDeca-VariableFont_wght.ttf') format('truetype');
+}
+
 .project-heading{
     font-size: 100px;
+    font-family: 'Lexend Deca', sans-serif;
     width: 100%;
     background: grey;
     text-transform: capitalize;
@@ -203,8 +221,7 @@ body{
     margin-bottom: 50px;
     color: 1a1a1a;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 8px transparent;
+    text-shadow: 1px 1px white;
 }
 
 .project-container{
@@ -212,8 +229,6 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
 }
-
-
 
 .project-card{
     height: 400px;
@@ -417,7 +432,7 @@ color: #666;
 }
 }
 
-/* timeline */
+/* timeline
 
 .timeline{
     display: block;
@@ -525,7 +540,7 @@ color: #666;
         font-size: 30px;
         font-weight: 300;
         margin-bottom: 20px;
-    }
+    } */
 
 .contact {
     margin-bottom: 20px;
@@ -549,6 +564,7 @@ color: #666;
 
 .contact-heading {
     font-size: 80px;
+    font-family: 'Lexend Deca', sans-serif;
     width: 100%;
     background: grey;
     text-transform: capitalize;
