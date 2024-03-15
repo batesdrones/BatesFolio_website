@@ -26,8 +26,9 @@ body{
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
+    z-index: 9999;
   }
-  }
+  
   
   .name {
     font-size: 18px;
@@ -38,7 +39,7 @@ body{
   }
   
   .batesfolio {
-    font-size: 32px;
+    font-size: 64px;
     font-weight: bold;
   }
 
@@ -107,7 +108,7 @@ body{
 .home-section.active,
 .project-section.active,
 .about-section.active,
-.contact-section.active{
+.contact-section.active {
     position: relative;
     opacity: 1;
     z-index: 8;
@@ -121,49 +122,28 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     position: relative;
     overflow: hidden;
-  }
-  
-  .home-img {
-    filter: blur(20px);
+}
+
+.blur-container {
+    position: relative;
+    z-index: 1;
+    filter: blur(20px); /* Apply the blur effect directly to the container */
     transition: filter 0.3s, transform 0.5s;
     max-width: 1000px; /* Adjust the maximum width as desired */
     height: auto;
-    position: relative;
-    z-index: 0;
-  }
+}
 
-  .home-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity and color as desired  */
-    z-index: -1;
-  }
-  
-  .home-section:hover .home-img {
-    filter: blur(0);
-    transform: translateX(-50%);
-  }
-  
-  .blur-container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .blur-container:hover .home-img {
+.blur-container:hover {
     filter: blur(0);
     transform: translateX(-10px);
-  }
-  
-  .focus-effect {
+}
+
+.focus-effect {
     position: absolute;
     top: 0;
     left: 0;
@@ -173,15 +153,12 @@ body{
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s;
-  }
-  
-  .blur-container:hover .home-img {
-    filter: blur(0);
-  }
-  
-  .blur-container:hover .focus-effect {
+}
+
+.blur-container:hover .focus-effect {
     opacity: 1;
-  }
+}
+
 
 /* Adjust the styles as desired */
 .header-text {
