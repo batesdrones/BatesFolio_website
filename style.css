@@ -558,8 +558,8 @@ color: #666;
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container {
